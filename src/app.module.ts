@@ -2,10 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PokemonModule} from './modules/pokemon.module';
 import { TeamModule } from './modules/team.module';
+import { ConsoleModule } from './modules/console.module';
 
-
-// import { AppController } from './app.controller';
-// import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -21,6 +19,7 @@ import { TeamModule } from './modules/team.module';
     }),
     PokemonModule,
     TeamModule,
+    ConsoleModule,
   ],
 })
 export class AppModule {}
