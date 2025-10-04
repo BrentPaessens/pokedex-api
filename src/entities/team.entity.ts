@@ -3,8 +3,8 @@ import { Pokemon } from './pokemon.entity';
 
 @Entity('teams')
 export class Team {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
+  @PrimaryGeneratedColumn()
+  id: number;
 
   @Column()
   name: string;

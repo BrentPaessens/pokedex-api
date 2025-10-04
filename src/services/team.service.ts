@@ -24,7 +24,7 @@ export class TeamService {
 
   async findOne(id: number): Promise<any> {
     const team = await this.teamRepository.findOne({
-      where: { id },
+      where: { id: id as any },
       relations: ['pokemons'],
     });
 
