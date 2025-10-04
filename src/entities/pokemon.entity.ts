@@ -1,4 +1,5 @@
 import { Entity, Column, PrimaryColumn, ManyToMany } from "typeorm";
+import { Team } from "./team.entity";
 
 @Entity('pokemons')
 export class Pokemon {
