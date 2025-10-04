@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, In } from 'typeorm';
-import { Team } from './team.entity';
-import { Pokemon } from '../pokemon/pokemon.entity';
+import { Team } from '../entities/team.entity';
+import { Pokemon } from '../entities/pokemon.entity';
 
 @Injectable()
 export class TeamService {

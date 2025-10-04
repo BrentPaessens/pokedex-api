@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { PokemonModule} from './pokemon/pokemon.module';
-import { TeamModule } from './team/team.module';
+import { PokemonModule} from './modules/pokemon.module';
+import { TeamModule } from './modules/team.module';
 
 
 // import { AppController } from './app.controller';
